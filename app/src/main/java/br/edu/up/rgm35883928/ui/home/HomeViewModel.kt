@@ -1,5 +1,6 @@
 package br.edu.up.rgm35883928.ui.home
 
+import android.R
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -42,6 +43,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
+import br.edu.up.rgm35883928.InventoryTopAppBar
+import br.edu.up.rgm35883928.ui.item.ItemDetailsUiState
+import br.edu.up.rgm35883928.ui.item.ItemDetailsViewModel
+import br.edu.up.rgm35883928.ui.item.toItem
+import br.edu.up.rgm35883928.ui.navigation.NavigationDestination
 import kotlinx.coroutines.launch
 
 object ItemDetailsDestination : NavigationDestination {

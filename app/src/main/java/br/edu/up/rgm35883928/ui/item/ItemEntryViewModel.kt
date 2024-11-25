@@ -1,5 +1,8 @@
 package br.edu.up.rgm35883928.ui.item
 
+import android.R.attr.id
+import android.R.attr.name
+import android.content.ClipData.Item
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue

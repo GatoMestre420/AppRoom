@@ -2,12 +2,11 @@ package br.edu.up.rgm35883928.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavHostController
-import androidx.navigation.NavType
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.navArgument
-
+import br.edu.up.rgm35883928.ui.home.HomeDestination
+import br.edu.up.rgm35883928.ui.home.HomeScreen
+import br.edu.up.rgm35883928.ui.item.ItemDetailsDestination
+import br.edu.up.rgm35883928.ui.item.ItemEntryDestination
+import br.edu.up.rgm35883928.ui.item.ItemEntryScreen
 
 
 @Composable

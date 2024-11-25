@@ -1,5 +1,6 @@
 package br.edu.up.rgm35883928.ui.item
 
+import android.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.calculateEndPadding
@@ -25,11 +26,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.inventory.InventoryTopAppBar
-import com.example.inventory.R
-import com.example.inventory.ui.AppViewModelProvider
-import com.example.inventory.ui.navigation.NavigationDestination
-import com.example.inventory.ui.theme.InventoryTheme
+import br.edu.up.rgm35883928.InventoryTopAppBar
+import br.edu.up.rgm35883928.ui.AppViewModelProvider
+import br.edu.up.rgm35883928.ui.navigation.NavigationDestination
+import br.edu.up.rgm35883928.ui.theme.InventoryTheme
 import kotlinx.coroutines.launch
 import java.util.Currency
 import java.util.Locale
