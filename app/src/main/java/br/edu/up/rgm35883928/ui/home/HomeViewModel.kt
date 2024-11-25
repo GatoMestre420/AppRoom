@@ -44,6 +44,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import br.edu.up.rgm35883928.InventoryTopAppBar
+import br.edu.up.rgm35883928.ui.AppViewModelProvider
 import br.edu.up.rgm35883928.ui.item.ItemDetailsUiState
 import br.edu.up.rgm35883928.ui.item.ItemDetailsViewModel
 import br.edu.up.rgm35883928.ui.item.toItem

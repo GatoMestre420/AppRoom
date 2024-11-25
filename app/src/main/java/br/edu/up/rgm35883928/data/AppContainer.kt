@@ -1,6 +1,4 @@
 package br.edu.up.rgm35883928.data
-
-
 import android.content.Context
 
 /**

@@ -1,6 +1,5 @@
 package br.edu.up.rgm35883928
 
-import android.R.string
 import androidx.compose.material.icons.Icons.Filled
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -12,7 +11,11 @@ import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import br.edu.up.rgm35883928.ui.navigation.InventoryNavHost
+import com.example.inventory.R.string
+
 
 
 /**
