@@ -5,5 +5,5 @@ interface NavigationDestination {
     val route: String
 
 
-    val titleRes: String
+    val titleRes: Int
 }
