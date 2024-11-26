@@ -1,8 +1,8 @@
-package br.edu.up.rgm35883928
+
+package com.example.inventory
 
 
 
-import com.example.inventory.R.string
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
@@ -17,6 +17,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import br.edu.up.rgm35883928.ui.navigation.InventoryNavHost
+import com.example.inventory.R.string
+
 
 
 @Composable

@@ -1,7 +1,8 @@
 
-package br.edu.up.rgm35883928.ui.item
+package com.example.inventory
 
-import android.R
+
+import InventoryTheme
 import com.example.inventory.R.string
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
@@ -17,9 +18,10 @@ import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import br.edu.up.rgm35883928.InventoryTopAppBar
 import br.edu.up.rgm35883928.ui.AppViewModelProvider
+import br.edu.up.rgm35883928.ui.item.ItemEditViewModel
 import br.edu.up.rgm35883928.ui.navigation.NavigationDestination
+import com.example.inventory.InventoryTopAppBar
 
 
 import kotlinx.coroutines.launch

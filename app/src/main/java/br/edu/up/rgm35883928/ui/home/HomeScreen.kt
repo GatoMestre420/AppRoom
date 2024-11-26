@@ -1,8 +1,7 @@
-package br.edu.up.rgm35883928.ui.home
+package com.example.inventory
 
 
 import InventoryTheme
-import com.example.inventory.R.string
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -37,12 +36,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import br.edu.up.rgm35883928.InventoryTopAppBar
 import br.edu.up.rgm35883928.data.Item
 import br.edu.up.rgm35883928.ui.AppViewModelProvider
+import br.edu.up.rgm35883928.ui.home.HomeViewModel
 import br.edu.up.rgm35883928.ui.item.formatedPrice
 import br.edu.up.rgm35883928.ui.navigation.NavigationDestination
-
+import com.example.inventory.R.string
 
 
 object HomeDestination : NavigationDestination {

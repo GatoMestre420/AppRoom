@@ -1,10 +1,14 @@
 
-package br.edu.up.rgm35883928.ui.item
+package com.example.inventory
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import br.edu.up.rgm35883928.data.ItemsRepository
+import br.edu.up.rgm35883928.ui.item.ItemDetails
+import br.edu.up.rgm35883928.ui.item.toItem
+import br.edu.up.rgm35883928.ui.item.toItemDetails
+import com.example.inventory.ui.item.ItemDetailsDestination
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.filterNotNull
@@ -66,5 +70,5 @@ class ItemDetailsViewModel(
  */
 data class ItemDetailsUiState(
     val outOfStock: Boolean = true,
-    val itemDetails: ItemDetails = ItemDetails()
+    val itemDetails: ItemDetails = ItemDetails(),
 )

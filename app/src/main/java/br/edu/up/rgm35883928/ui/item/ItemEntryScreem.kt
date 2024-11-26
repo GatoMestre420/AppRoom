@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 
-package br.edu.up.rgm35883928.ui.item
+package com.example.inventory
+
 
 import InventoryTheme
 import com.example.inventory.R.string
@@ -43,12 +44,18 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import br.edu.up.rgm35883928.InventoryTopAppBar
 import br.edu.up.rgm35883928.ui.AppViewModelProvider
+import br.edu.up.rgm35883928.ui.item.ItemDetails
+import br.edu.up.rgm35883928.ui.item.ItemEntryViewModel
+import br.edu.up.rgm35883928.ui.item.ItemUiState
 import br.edu.up.rgm35883928.ui.navigation.NavigationDestination
+import com.example.inventory.InventoryTopAppBar
 import kotlinx.coroutines.launch
 import java.util.Currency
 import java.util.Locale
+
+
+
 
 object ItemEntryDestination : NavigationDestination {
     override val route = "item_entry"

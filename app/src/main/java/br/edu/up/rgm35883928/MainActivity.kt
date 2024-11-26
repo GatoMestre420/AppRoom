@@ -9,7 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import br.edu.up.rgm35883928.InventoryApp
+import com.example.inventory.InventoryApp
 
 
 class MainActivity : ComponentActivity() {
