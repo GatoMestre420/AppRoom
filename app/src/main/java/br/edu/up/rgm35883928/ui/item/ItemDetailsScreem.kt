@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.item
+package com.example.inventory
 
 import InventoryTheme
 import androidx.annotation.StringRes
@@ -57,9 +57,6 @@ import br.edu.up.rgm35883928.data.Item
 import br.edu.up.rgm35883928.ui.item.formatedPrice
 import br.edu.up.rgm35883928.ui.item.toItem
 import br.edu.up.rgm35883928.ui.navigation.NavigationDestination
-import com.example.inventory.InventoryTopAppBar
-import com.example.inventory.ItemDetailsUiState
-import com.example.inventory.R
 
 
 object ItemDetailsDestination : NavigationDestination {
@@ -244,13 +241,8 @@ private fun DeleteConfirmationDialog(
 @Composable
 fun ItemDetailsScreenPreview() {
     InventoryTheme {
-        ItemDetailsBody(
-            ItemDetailsUiState(
-                outOfStock = true,
-                itemDetails = ItemDetails(1, "Pen", "$100", "10")
-            ),
-            onSellItem = {},
-            onDelete = {}
-        )
+        ItemDetailsBody(ItemDetailsUiState(
+            outOfStock = true, itemDetails = ItemDetails(1, "Pen", "$100", "10")
+        ), onSellItem = {}, onDelete = {})
     }
 }

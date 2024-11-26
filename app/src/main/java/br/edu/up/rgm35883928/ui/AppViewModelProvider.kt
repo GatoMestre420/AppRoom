@@ -8,9 +8,9 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import br.edu.up.rgm35883928.InventoryApplication
 import br.edu.up.rgm35883928.ui.home.HomeViewModel
-import br.edu.up.rgm35883928.ui.item.ItemDetailsViewModel
 import br.edu.up.rgm35883928.ui.item.ItemEditViewModel
 import br.edu.up.rgm35883928.ui.item.ItemEntryViewModel
+import com.example.inventory.ItemDetailsViewModel
 
 
 /**

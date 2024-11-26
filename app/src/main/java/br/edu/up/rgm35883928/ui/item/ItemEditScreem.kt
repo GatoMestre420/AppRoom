@@ -3,7 +3,6 @@ package com.example.inventory
 
 
 import InventoryTheme
-import com.example.inventory.R.string
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.padding
@@ -21,7 +20,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import br.edu.up.rgm35883928.ui.AppViewModelProvider
 import br.edu.up.rgm35883928.ui.item.ItemEditViewModel
 import br.edu.up.rgm35883928.ui.navigation.NavigationDestination
-import com.example.inventory.InventoryTopAppBar
+
 
 
 import kotlinx.coroutines.launch

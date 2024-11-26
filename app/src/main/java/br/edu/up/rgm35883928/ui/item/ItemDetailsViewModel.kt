@@ -8,7 +8,6 @@ import br.edu.up.rgm35883928.data.ItemsRepository
 import br.edu.up.rgm35883928.ui.item.ItemDetails
 import br.edu.up.rgm35883928.ui.item.toItem
 import br.edu.up.rgm35883928.ui.item.toItemDetails
-import com.example.inventory.ui.item.ItemDetailsDestination
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.filterNotNull
