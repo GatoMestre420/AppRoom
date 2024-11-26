@@ -4,31 +4,21 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import kotlin.concurrent.Volatile
 
-/**
- * Database class with a singleton Instance object.
- */
 @Database(entities = [Item::class], version = 1, exportSchema = false)
-abstract class InventoryDatabase : RoomDatabase() {
+abstract class InventoryDatabase: RoomDatabase() {
+    abstract fun itemDao(): ItemDAO
 
-    abstract fun itemDao(): ItemDao
-
-    companion object {
+    companion object{
         @Volatile
-        private var instance: InventoryDatabase? = null
+        private var Instance: InventoryDatabase? = null
 
-        fun getDatabase(context: Context): InventoryDatabase {
-            // if the instance is not null, return it, otherwise create a new database instance.
-            return instance ?: synchronized(this) {
+        fun getDatabase(context: Context): InventoryDatabase{
+            return Instance ?: synchronized(this){
                 Room.databaseBuilder(context, InventoryDatabase::class.java, "item_database")
-                    /**
-                     * Setting this option in your app's database builder means that Room
-                     * permanently deletes all data from the tables in your database when it
-                     * attempts to perform a migration with no defined migration path.
-                     */
-                    .fallbackToDestructiveMigration()
                     .build()
-                    .also { instance = it }
+                    .also { Instance = it }
             }
         }
     }

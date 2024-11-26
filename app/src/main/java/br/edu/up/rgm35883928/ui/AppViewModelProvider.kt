@@ -7,6 +7,7 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import br.edu.up.rgm35883928.InventoryApplication
+import br.edu.up.rgm35883928.ui.home.HomeViewModel
 import br.edu.up.rgm35883928.ui.item.ItemDetailsViewModel
 import br.edu.up.rgm35883928.ui.item.ItemEditViewModel
 import br.edu.up.rgm35883928.ui.item.ItemEntryViewModel
@@ -48,5 +49,8 @@ object AppViewModelProvider {
  * Extension function to queries for [Application] object and returns an instance of
  * [InventoryApplication].
  */
-fun CreationExtras.inventoryApplication(): InventoryApplication =
-    (this[AndroidViewModelFactory.APPLICATION_KEY] as InventoryApplication)
+fun CreationExtras.inventoryApplication(): InventoryApplication {
+    val application = this[AndroidViewModelFactory.APPLICATION_KEY]
+    return application as? InventoryApplication
+        ?: throw IllegalStateException("Application must be an instance of InventoryApplication")
+}

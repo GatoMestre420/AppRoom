@@ -1,4 +1,4 @@
-package br.edu.up.rgm35883928.ui.theme
+package br.edu.up.rgm33824215.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
